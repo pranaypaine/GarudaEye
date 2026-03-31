@@ -1,4 +1,4 @@
-![GarudaEye Logo](./images/logo.png)
+![GarudaEye Logo](logo.png)
 
 ![License](https://img.shields.io/github/license/riskprofiler/Cloud-Frontier)
 ![Supports AWS](https://img.shields.io/badge/Supports-AWS-orange)
