@@ -1,0 +1,89 @@
+[workspace]
+members = [
+    "crates/garudaeye",
+    "crates/garudaeye_core",
+    "crates/infra",
+    "crates/collectors",
+    "crates/analyzers",
+    "crates/api",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["GarudaEye Team"]
+license = "MIT"
+repository = "https://github.com/yourusername/GarudaEye"
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1.36", features = ["full"] }
+tokio-util = "0.7"
+async-trait = "0.1"
+
+# HTTP server
+axum = "0.7"
+tower = "0.4"
+tower-http = { version = "0.5", features = ["fs", "cors", "compression-full", "trace"] }
+
+# HTTP client
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+
+# Database
+sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite", "postgres", "macros", "migrate", "chrono", "uuid"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# CLI
+clap = { version = "4.5", features = ["derive", "env"] }
+
+# Logging & tracing
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Utilities
+uuid = { version = "1.7", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+# Redis (for cloud mode)
+redis = { version = "0.24", features = ["tokio-comp", "connection-manager"] }
+
+# AWS SDK
+aws-config = "1.1"
+aws-sdk-ec2 = "1.16"
+aws-sdk-s3 = "1.16"
+aws-sdk-elasticloadbalancingv2 = "1.14"
+aws-sdk-rds = "1.16"
+aws-sdk-elasticache = "1.14"
+aws-sdk-elasticsearch = "1.14"
+aws-sdk-eks = "1.15"
+aws-sdk-elasticbeanstalk = "1.14"
+aws-sdk-apigateway = "1.14"
+aws-sdk-lambda = "1.16"
+aws-sdk-dynamodb = "1.16"
+aws-sdk-sns = "1.16"
+aws-sdk-sqs = "1.16"
+aws-sdk-cloudfront = "1.16"
+aws-sdk-ecs = "1.16"
+aws-sdk-route53 = "1.16"
+
+# Frontend embedding
+rust-embed = { version = "8.2", features = ["compression"] }
+mime_guess = "2.0"
+
+# Configuration
+figment = { version = "0.10", features = ["toml", "json", "env"] }
+dotenvy = "0.15"
+
+# Metrics
+prometheus = "0.13"
+
+# Testing
+mockall = "0.12"
