@@ -2,10 +2,10 @@
 
 ![License](https://img.shields.io/github/license/riskprofiler/Cloud-Frontier)
 ![Supports AWS](https://img.shields.io/badge/Supports-AWS-orange)
-![Supports GCP](https://img.shields.io/badge/Supports-GCP-1a73e8)
-![Supports Azure](https://img.shields.io/badge/Supports-Azure-89c402)
-![Supports DigitalOcean](https://img.shields.io/badge/Supports-DigitalOcean-0069ff)
-![Supports Oracle Cloud](https://img.shields.io/badge/Supports-Oracle_Cloud-e55844)
+![Supports GCP (WIP)](https://img.shields.io/badge/Supports-GCP-1a73e8)(WIP)
+![Supports Azure (WIP)](https://img.shields.io/badge/Supports-Azure-89c402)(WIP)
+![Supports DigitalOcean (WIP)](https://img.shields.io/badge/Supports-DigitalOcean-0069ff)(WIP)
+![Supports Oracle Cloud (WIP)](https://img.shields.io/badge/Supports-Oracle_Cloud-e55844)(WIP)
 
 > The Eye That Misses Nothing, Single-binary cloud asset discovery and security analysis tool built in Rust.
 
