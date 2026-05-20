@@ -1,0 +1,27 @@
+[package]
+name = "analyzers"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+garudaeye_core = { path = "../garudaeye_core" }
+infra = { path = "../infra" }
+
+tokio = { workspace = true }
+reqwest = { workspace = true }
+tracing = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+
+# Fingerprinting
+hickory-resolver = { version = "0.24", features = ["tokio-runtime"] }
+rustls = { version = "0.23", default-features = false, features = ["std"] }
+tokio-rustls = "0.26"
+rustls-pki-types = "1"
+x509-parser = "0.16"
+ipnet = { version = "2.9", features = ["serde"] }

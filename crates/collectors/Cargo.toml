@@ -1,0 +1,37 @@
+[package]
+name = "collectors"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+garudaeye_core = { path = "../garudaeye_core" }
+infra = { path = "../infra" }
+
+tokio = { workspace = true }
+tracing = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+uuid = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# AWS SDK
+aws-config = { workspace = true }
+aws-sdk-ec2 = { workspace = true }
+aws-sdk-s3 = { workspace = true }
+aws-sdk-elasticloadbalancingv2 = { workspace = true }
+aws-sdk-rds = { workspace = true }
+aws-sdk-elasticache = { workspace = true }
+aws-sdk-elasticsearch = { workspace = true }
+aws-sdk-eks = { workspace = true }
+aws-sdk-elasticbeanstalk = { workspace = true }
+aws-sdk-apigateway = { workspace = true }
+aws-sdk-lambda = { workspace = true }
+aws-sdk-dynamodb = { workspace = true }
+aws-sdk-sns = { workspace = true }
+aws-sdk-sqs = { workspace = true }
+aws-sdk-cloudfront = { workspace = true }
+aws-sdk-ecs = { workspace = true }
+aws-sdk-route53 = { workspace = true }

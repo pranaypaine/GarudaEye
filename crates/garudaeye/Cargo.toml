@@ -1,0 +1,42 @@
+[package]
+name = "garudaeye"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "garudaeye"
+path = "src/main.rs"
+
+[dependencies]
+garudaeye_core = { path = "../garudaeye_core" }
+infra = { path = "../infra" }
+api = { path = "../api" }
+collectors = { path = "../collectors" }
+analyzers = { path = "../analyzers" }
+
+tokio = { workspace = true }
+axum = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+rustls = { version = "0.23", default-features = false, features = ["aws-lc-rs", "std"] }
+sqlx = { workspace = true }
+aws-config = { workspace = true }
+aws-sdk-ec2 = { workspace = true }
+async-trait = { workspace = true }
+uuid = { workspace = true }
+dotenvy = { workspace = true }
+open = "5.0"
+rust-embed = "8.2"
+mime_guess = "2.0"
+
+[build-dependencies]
+which = "5.0"
